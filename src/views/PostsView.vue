@@ -5,8 +5,10 @@
       <p v-if="showWaitingMessage"><b><font color="red" size="50">CARGANDO...</font></b></p>
     </transition>
     <div v-for="post in posts" :key="post.id">
-      <h1>{{ post.title }}</h1>
-      <p>{{ post.body }}</p>
+      <router-link :to="`/blog/${post.id}`">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.body }}</p>
+      </router-link>
     </div>
   </div>
 </template>

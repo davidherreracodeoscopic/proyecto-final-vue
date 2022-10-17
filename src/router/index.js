@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/PostsView.vue'
 import ContactView from '../views/ContactView.vue'
+import BlogPost from '../views/BlogPost.vue'
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,11 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "author" */ '../views/AuthorView.vue')
     }
+  },
+  {
+    path: '/blog/:postId',
+    name: 'blog-post',
+    component: BlogPost
   }
 ]
 
