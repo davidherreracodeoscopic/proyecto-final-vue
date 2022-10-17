@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Contact page</h1>
+    <h1>Página de Contacto</h1>
     <div class="contact-form">
-      <input type="text" name="c_name" placeholder="Name" v-model="c_name" />
+      <input type="text" name="c_name" placeholder="Nombre" v-model="c_name" />
       <input type="text" name="email" placeholder="Email" v-model="email" />
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
-      <BaseButton :disabled="button_disabled">Submit</BaseButton>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje" v-model="message"></textarea>
+      <BaseButton :disabled="button_disabled">Enviar</BaseButton>
     </div>
   </div>
 </template>
