@@ -1,7 +1,8 @@
 <template>
     <div>
         <hr/>
-        <p>Proyecto creado por David Herrera Baena en Codeoscopic. </p>
+        <p>Proyecto creado por David Herrera Baena</p>
+        <p><img src="../assets/logo-co.png"/></p>
         <a href="https://www.linkedin.com/company/codeoscopic" class="fa fa-linkedin" />
         <a href="https://www.facebook.com/Codeoscopic-464951560275451" class="fa fa-facebook" />
         <a href="https://twitter.com/codeoscopic" class="fa fa-twitter" />
