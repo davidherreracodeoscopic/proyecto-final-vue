@@ -6,6 +6,12 @@ import VueAxios from 'vue-axios'
 import store from './store'
 import Vuex from 'vuex'
 
+import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
+Vue.use(BootstrapVue);
+
 Vue.config.productionTip = false
 Vue.use(VueAxios, axios)
 Vue.use(Vuex)

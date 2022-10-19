@@ -1,15 +1,22 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/contact">Contacto</router-link> |
-      <router-link to="/author">Autor</router-link>
-    </nav>
+    <Navbar />
     <router-view/>
   </div>
 </template>
 
+<script>
+import Navbar from '@/components/Navbar.vue'
+export default {
+  components: {Navbar},
+  setup() {
+
+  }
+}
+</script>
+
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +34,4 @@ nav a {
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
